@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.firstpage {
+    /* background: radial-gradient(rgb(228, 212, 229), #e27ccb); */
+    
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+     display: flex; 
+  
+}
+.logo img{
+    margin-left: 20px;
+    border-radius: 50%;
+   
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.container nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.container nav ul li:hover{
+    color: black;
+}
+
+.container a{
+    font-size: 15px;
+    text-decoration: none;
+    color:black;
+
+}
+.container a:hover{
+    color: white;
+}
+#cart{
+    height: 30px;
+    width: 30px;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-image: url(./media/images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.image{  
+    height: 100px;
+     width: 100px
+ }
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    flex-basis: 50%;
+    margin-right: 200px;
+}
+
+
+.col h1{
+    font-size: 45px;
+    line-height: 60px;
+    
+    color: black;
+}
+.col h4{
+    font-size: 15px;
+    margin-left: 50px;
+    color: black;
+}
+
+.col .btn{
+    display: inline-block;
+    background:black;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 50px;
+    margin-top: 50px;
+    border-radius: 30px;
+    
+}
+.col .btn:hover{
+    background: #fff;
+    color: black;
+}
+
+
+.firstpage .row {
+    margin-top: 35px;
+}
+
+
+/** About Us Page **/
+
+#About{
+    margin-top: 50px;
+}
+.About_Us{
+    display: flex;
+    margin: 10px  100px;
+}
+
+#About h2 {
+    color: rgb(155,119,231);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.About_Us p{
+    width: 80vh;
+    text-align: justify;
+    line-height: 2em;
+    margin: 5px 35px 15px 35px;
+}
+
+.About_Us img{
+    height: 300px;
+    width: 500px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+/* our service */
+#services{
+  display: block;  
+  margin-top: 40px;
+}
+.services{
+    text-align: center;
+    display: flex;
+    margin: 10px  100px;
+    
+}
+.services p{
+    max-width: 700px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#services h2{
+    color: rgb(155,119,231);
+    font-weight: 300;
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+
+}
+#services p{
+    letter-spacing: 1.5px;
+}
+
+.service-list{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .service-listitem{
+    flex: 50%;
+    margin: 5px;
+} */
+.service-list img{
+    height: 400px;
+    width: 600px;
+    padding: 10px;
+}
+.service-list p{
+    width: 50%;
+    letter-spacing: 1.5px;
+    margin: 150px 50px;
+}
+.home{
+    display: flex;
+    
+}
+.office{
+    display: flex;
+}

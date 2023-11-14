@@ -1,0 +1,174 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: radial-gradient(rgb(228, 212, 229), #e27ccb);
+    
+    
+}
+.logo {
+    display: flex;
+}
+.logo img{
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar nav ul{
+    display: inline-block;
+    list-style-type: none;
+    
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+.navbar nav ul li:hover{
+    color: white;
+}
+
+.navbar a{
+    font-size: 15px;
+    text-decoration: none;
+    color:black;
+
+}
+.navbar a:hover{
+    color: #fff;;
+}
+#cart{
+    height: 30px;
+    width: 30px;
+}
+
+.Products-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+
+}
+
+.product-items{
+    flex: 30%;
+    margin: 10px;
+    text-transform: capitalize;
+    border: 2px solid #9B77E7;
+    border-radius: 5px;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    padding: 5px 10px;
+}
+.product-items h3{
+    font-size: 1.5em;
+    color: #9B77E7;
+}
+.products-text{
+    padding-left: 10px;
+}
+@media screen  and(max-width:600px){
+    .product-items{
+        flex: 90%;
+        padding: 10px;
+    border: 2px solid black;
+
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .product-items h3{
+        font-size: 20px;
+    }
+}
+/* footer */
+
+footer{
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0;
+    width: 100%;
+  
+  }
+  
+  @media (max-width: 600px){
+    .footer-content {
+      flex-direction: column;
+    }
+  }
+  
+  .footer-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+  
+  }
+  
+  li {
+    padding: 2px;
+  }
+  
+  ul li a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+   .copy-right{
+  padding-left: 50px;
+  }
+  
+  .Subscribe {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  
+  }
+  
+  hr {
+    opacity: 0.5;
+  }
+  .copy-right p{
+    opacity: 0.5;
+    padding: 16px 0;
+    font-size: 15px;
+    margin: 0;
+  }
+  input {
+    padding: 5px;
+    background-color: #dbd6d6;
+    border: 1px;
+    border-radius: 4px;
+  }

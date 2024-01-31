@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.main {
+    width: 1320px;
+    display: flex;
+    margin: auto;
+}
+.filterBox {
+    flex-basis: 23%;
+}
+.product {
+    flex-basis: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.CategoryList {
+    margin-top: 20px ;
+}
+
+.CategoryList label {
+    display: block;
+    padding: 5px 0px;
+}
+.productItems{
+    flex-basis: 23%;
+    box-shadow: 0px 0px 10px 2px #ccc;
+    margin-bottom: 20px ;
+}
+.productItems img {
+    width: 100%;
+    height: 100px;
+}
+
+.productItems p{
+    padding: 10px;
+}
+.productItems h3{
+    padding: 10px;
+}
+.productItems h4{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

@@ -4,6 +4,7 @@
     padding: 0px;
     font-family: sans-serif;
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -53,12 +54,19 @@ nav ul{
 }
 
 /* signup container*/
+.main_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .signup_container {
     background-color: #fff;
+    width: 50%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     
 }
 
 #signupForm {
@@ -75,6 +83,7 @@ input {
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    outline: none;
 }
 
 button {

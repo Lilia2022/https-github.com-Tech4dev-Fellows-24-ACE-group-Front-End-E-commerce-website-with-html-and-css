@@ -6,14 +6,14 @@ var CategoryListDiv = document.querySelector(".CategoryList");
 
 let allCat = [];
 
-let displayProduct= async(allCheckCat=[])=>{
+let displayProduct = async (allCheckCat = []) => {
     //CategoryListDiv.innerHTML='';
     productDiv.innerHTML = '';
     let product = await fetch('https://fakestoreapi.com/products');
     let finalproduct = await product.json();
-    finalproduct.forEach(element =>{
+    finalproduct.forEach(element => {
         //cat data
-        if(!allCat.includes(element.category)){
+        if (!allCat.includes(element.category)) {
             CategoryListDiv.innerHTML += `
                 <label >
                     <input type="checkbox" onclick='categoryFilter()' value="${element.category}">${element.category}
@@ -22,16 +22,18 @@ let displayProduct= async(allCheckCat=[])=>{
             allCat.push(element.category)
         }
         //filter cat
-        
-        if(allCheckCat.length == 0){
+
+        if (allCheckCat.length == 0) {
             allCheckCat = allCat;
         }
-       
-        if(allCheckCat.includes(element.category)){
+
+        if (allCheckCat.includes(element.category)) {
             //product data
             productDiv.innerHTML += `
                 <div class="productItems">
+                  
                     <img src="${element.image}" alt="img">
+                   
                     <h4>${element.category}</h4>
                     <p>$ ${element.price} | ${element.rating.rate}</p>
                     <h3>${element.title}</h3>
@@ -43,15 +45,15 @@ let displayProduct= async(allCheckCat=[])=>{
 }
 displayProduct();
 
-let categoryFilter=()=>{
+let categoryFilter = () => {
     let checkInput = document.querySelectorAll("input[type='checkbox']");
     //console.log(checkInput);
     let checkdata = [];
-    checkInput.forEach((e)=>{
-        
-        if(e.checked){
-           //console.log(e.value);
-           checkdata.push(e.value);
+    checkInput.forEach((e) => {
+
+        if (e.checked) {
+            //console.log(e.value);
+            checkdata.push(e.value);
         }
     })
     //console.log(checkdata);

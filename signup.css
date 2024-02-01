@@ -3,12 +3,19 @@
   padding: 0px;
   font-family: sans-serif;
 }
+.nav_menu {
+  background: radial-gradient(rgb(228, 212, 229), #e27ccb);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .navbar {
   display: flex;
+  
   align-items: center;
   padding: 20px;
-  background: radial-gradient(rgb(228, 212, 229), #e27ccb);
-  
+  width: 80%;
+  justify-content: space-between;
   
 }
 .logo {
@@ -17,16 +24,18 @@
 .logo img{
   margin-left: 20px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 nav{
-  flex: 1;
+  display: flex;
+  gap: 50px;
   text-align: right;
 }
 
 .navbar nav ul{
-  display: inline-block;
+  display: flex;
+  gap: 30px;
   list-style-type: none;
   
 }
